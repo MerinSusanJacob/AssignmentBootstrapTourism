@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alappuzha</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top mb-5">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <img src="Images/logo.jpg" alt="logo" id="logo" class="navbar-brand ml-5" height="60px" width="60px">
+            <a class="navbar-brand text-success" href="#">Kerala Tourism</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link  text-light" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active  text-light" href="districts.html">Districts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light" href="#">Places to explore</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">
+              <a href="signin.html"  class="btn btn-outline-success me-3">SignIn</a>
+              <a href="signup.html"  class="btn btn-outline-success me-3">SignUp</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- Navbar ends -->
+<!-- Main container starts -->
+ <div class="container w-75 px-0"  id="districtContainer">
+  <!-- Image and desciption -->
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+        <img src="Images/Districts/allapuzha.jpg" alt="Alappuzha" class="img-fluid rounded" width="675px" height="100px">
+    </div>
+    <div class="col-lg-5 align-self-center">
+        <h3 class="mb-3 text-center">Alappuzha</h3>
+        <p> Alappuzha (or Alleppey) is a city on the Laccadive Sea in the southern Indian state of Kerala. It's best known 
+          for houseboat cruises along the rustic Kerala backwaters, a network of tranquil canals and lagoons. 
+          Alappuzha Beach is the site of the 19th-century Alappuzha Lighthouse.
+        </p>
+    </div>
+  </div>
+  <!-- Image and desciption -->
+  <!-- Middle Heading -->
+  <div class="row mx-1">
+      <div class="card bg-dark mt-4">
+        <div class="card-body">
+           <h4 class="text-light text-center">Top tourist destinations in Alappuzha</h4> 
+        </div>
+      </div>
+  </div>
+ <!-- Middle Heading -->
+
+ <!-- Cards -Top destinations -->
+ <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="Images/alappuzhaphotos/card1-lighthouse.jpg" class="card-img-top" alt="light house" height="275px">
+      <div class="card-body">
+        <h5 class="card-title">Alleppey Lighthouse</h5>
+        <p class="card-text"> A humongous tower celebrating the solitude by the 
+          coastal strip wearing strips of red and white is how it is best reminisced.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="Images/alappuzhaphotos/card2-champakulam.jpg" class="card-img-top" alt="Champakulam" height="275px">
+      <div class="card-body">
+        <h5 class="card-title">Champakulam</h5>
+        <p class="card-text">Champakulam is a captivating rural set up on the banks of Pampa River in Alappuzha
+           district, with lush greens paddy fields and coconut trees forming a perfect picturesque, 
+           lying amidst the rice bowl of Kerala.  </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="Images/alappuzhaphotos/card3-kuttanad.jpg" class="card-img-top" alt="kuttanad back waters" height="275px">
+      <div class="card-body">
+        <h5 class="card-title">Kuttanad Backwaters</h5>
+        <p class="card-text">One of the best places to visit in Alleppey is Kuttanad Backwaters. This isn’t a place, 
+          it’s a phenomenon. It is a spectacular lagoon, surrounded by the beauty of lakes, rivers, canals, 
+          misty mountains and ethereal landscapes. </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Cards -Top destinations -->
+</div>
+<!-- Main container ends -->
+<!-- Footer starts -->
+ <footer id="sticky-footer" class="flex-shrink-0 py-2 bg-dark text-white-50 mt-5">
+  <p class="text-center"> Copyright@MerinSusanJacob</p>
+</footer>
+<!-- Footer ends -->
+</body>
+</html>

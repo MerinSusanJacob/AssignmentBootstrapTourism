@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top mb-5">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <img src="Images/logo.jpg" alt="logo" id="logo" class="navbar-brand" height="60px" width="60px">
+            <a class="navbar-brand text-success" href="#">Kerala Tourism</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link  text-light" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light" href="districts.html">Districts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light" href="#">Places to explore</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">
+              <a href="signin.html"  class="btn btn-outline-success me-3">SignIn</a>
+              <a href="signup.html"  class="btn btn-outline-success me-3">SignUp</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- Navbar ends -->
+
+<!-- Form starts -->
+<div class="container mx-auto p-xs-2 p-lg-4 w-xs-75 w-lg-25 mb-5 border bg-light rounded col-sm-10 col-md-4 col-lg-4 col-xl-4" id="signinForm">
+    <form class="row g-3">
+        <h3 class="text-center mt-1 mb-3 pt-3">Create an account now!</h3>
+        <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName">
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName">
+          </div>
+          <div class="col-12">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="col-12">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            <div id="passwordHelp" class="form-text">Password must be 8 characters long.</div>
+          </div>
+          <div class="col-12">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input border border-3" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              I agree to the <a href="#" class="text-decoration-none"> terms and conditions</a> 
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary w-100">Create an account</button>
+        </div>
+        <div id="signinHelp" class="form-text mt-2 text-center">Already have an account? <a href="signin.html">Sign In</a></div>
+      </form>
+</div>
+<!-- Form ends -->
+<!-- Footer starts -->
+<footer id="sticky-footer" class="flex-shrink-0 py-2 bg-dark text-white-50 mt-5">
+  <p class="text-center"> Copyright@MerinSusanJacob</p>
+</footer>
+<!-- Footer ends -->
+</body>
+</html>
