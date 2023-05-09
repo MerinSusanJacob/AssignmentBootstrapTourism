@@ -43,15 +43,19 @@
 
 <!-- Form starts -->
 <div class="container mx-auto p-xs-2 p-lg-5 w-xs-75 w-lg-25 border bg-light rounded col-sm-10 col-md-4 col-lg-4 col-xl-4" id="signinForm">
-<form>
+
+  <form action="accountpage.html" onsubmit="return validateForm()">
   <h3 class="text-center mt-1 mb-5">Sign in to Kerala Tourism</h3>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label for="Email1" class="form-label">Email address</label>
+    <input type="text" class="form-control" id="Email1" aria-describedby="emailHelp">
+    <p id="errorEmail" class="errormsg"></p>
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="Password1" class="form-label">Password</label>
+    <input type="text" class="form-control" id="Password1">
+    <p id="errorPass" class="errormsg"></p>
+    <p id="strength" class="errormsg"></p>
     <div id="forgotPassword" class="form-text text"><a href="#" class="text-decoration-none">Forgot Password?</a></div>
   </div>
   <div class="mb-3 form-check">
@@ -63,5 +67,6 @@
 </form>
 </div>
 <!-- Form ends -->
+<script src="scriptsignin.js"></script>
 </body>
 </html>

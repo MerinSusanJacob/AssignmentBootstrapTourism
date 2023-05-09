@@ -43,7 +43,7 @@
 
 <!-- Form starts -->
 <div class="container mx-auto p-xs-2 p-lg-4 w-xs-75 w-lg-25 mb-5 border bg-light rounded col-sm-10 col-md-4 col-lg-4 col-xl-4" id="signinForm">
-    <form class="row g-3">
+    <form action="accountpage.html" class="row g-2" onsubmit="return validateForm()">
         <h3 class="text-center mt-1 mb-3 pt-3">Create an account now!</h3>
         <div class="col-md-6">
             <label for="firstName" class="form-label">First Name</label>
@@ -54,14 +54,22 @@
             <input type="text" class="form-control" id="lastName">
           </div>
           <div class="col-12">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="Phno" class="form-label">Phone number</label>
+            <input type="text" class="form-control" id="Phno" aria-describedby="phoneHelp">
+            <p id="errorPhno" class="errormsg"></p>
           </div>
           <div class="col-12">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="Email1" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="Email1" aria-describedby="emailHelp">
+            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            <p id="errorEmail" class="errormsg"></p>
+          </div>
+          <div class="col-12">
+            <label for="Password1" class="form-label">Password</label>
+            <input type="text" class="form-control" id="Password1">
             <div id="passwordHelp" class="form-text">Password must be 8 characters long.</div>
+            <p id="errorPass" class="errormsg"></p>
+            <p id="strength" class="errormsg"></p>
           </div>
           <div class="col-12">
             <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
@@ -87,5 +95,6 @@
   <p class="text-center"> Copyright@MerinSusanJacob</p>
 </footer>
 <!-- Footer ends -->
+<script src="scriptsignup.js"></script>
 </body>
 </html>
